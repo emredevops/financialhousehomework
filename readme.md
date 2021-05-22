@@ -1,10 +1,10 @@
-DevOps Homework
+Financial House DevOps Homework
 
 1.Coding
 
-    "aws s3 ls --region us-east-1"
+    "python3 listbuckets.py"
 
-With AWS CLI you can get list of S3 Buckets. This command will give us bucket names and creation dates. If you don't use "us-east-1" as default region creation date can be difference on console screen because S3 global service and sometimes latency can be happen.
+I wrote this little script by using Boto3 which is Python library of AWS. When you run the above command on a computer with Python3 installed, it will give you bucket names and creation dates.
 
 
 2.Configuration Management

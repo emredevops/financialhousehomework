@@ -11,4 +11,4 @@ I wrote this little script by using Boto3 which is Python library of AWS. When y
 
 I wrote Ansible Playbook by using Ansible modules. I installed nginx with command module because in AWS EC2 Instances not using yum repos for nginx. Also i wrote basic nginx conf and copied to conf.d directory. You can apply playbook with this command;
 
-    "ansible-playbook playbook.yml -i inventory.txt"
+    "ansible-playbook playbook.yml -i inventory.yml"

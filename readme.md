@@ -11,7 +11,7 @@ I wrote this little script by using Boto3 which is Python library of AWS. When y
 ## 2.Configuration Management
 
 
-I wrote Ansible Playbook by using Ansible modules. I installed nginx with command module because AWS EC2 Instances not using yum repos for nginx. Also i wrote basic nginx conf and copied to conf.d directory. You can apply playbook with this command;
+I wrote Ansible Playbook by using Ansible modules. I created a user and group named Jamie and created a ssh key for this user. I enabled tcp forwarding with the sysctl module.I installed nginx with command module because AWS EC2 Instances not using yum repos for nginx. Also i wrote basic nginx conf and copied to conf.d directory. I also configured systemd to restart nginx after 5 seconds if the nginx service goes into a failure state. After that i enabled daemon reload, I started and enabled the nginx service. When the system is restarted, the nginx service will also start automatically. You can apply playbook with this command;
 
 
     ansible-playbook playbook.yml -i inventory.yml
